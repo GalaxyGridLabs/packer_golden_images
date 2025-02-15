@@ -5,7 +5,7 @@
 bootstrap_ubuntu_focal() {
     IMAGE_URL="https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img"
     IMAGE_NAME=$(basename $IMAGE_URL)
-    IMAGE_VERSION="20.04"
+    IMAGE_VERSION="2004"
     IMAGE_FORMAT="qcow2"
 
     if openstack image show ${IMAGE_NAME%.*}-$IMAGE_VERSION-current 2>&1 1>/dev/null; then 
